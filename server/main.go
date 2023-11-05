@@ -5,10 +5,10 @@ import (
 	"errors"
 	"google.golang.org/grpc"
 	"gorm.io/gorm"
-	"grpc-demo/config"
-	pb "grpc-demo/pb/proto"
 	"log"
 	"net"
+	"server/config"
+	pb "server/pb/server/proto"
 )
 
 var DB *gorm.DB

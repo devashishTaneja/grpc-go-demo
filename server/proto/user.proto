@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "/proto";
+option go_package = "/server/proto";
 
 service UserService {
   rpc Create(User) returns (User){};
@@ -15,5 +15,5 @@ message User {
 }
 
 message UserId {
-  string id = 1;
+  int64 id = 1;
 }
